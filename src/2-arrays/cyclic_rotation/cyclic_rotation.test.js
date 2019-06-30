@@ -1,7 +1,4 @@
-const solution = (A, K, shift = A.length - (K % A.length)) => [
-  ...A.slice(shift),
-  ...A.slice(0, shift)
-];
+import { solution } from "./cyclic_rotation";
 
 test("some test cases", () => {
   expect(solution([1], 100)).toEqual([1]);
